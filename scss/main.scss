@@ -1,0 +1,20 @@
+.btnPrimario{
+	@include boton;
+	&:hover{
+		box-shadow: 0px 0px 0px, 0px rgba(0,0,0,0.75);
+	}
+} 
+.btnSecundario{
+	@include boton;
+	background-color: $colorBlanco;
+	&:hover{
+		box-shadow: 0px 0px 0px, 0px rgba(0,0,0,0.75);
+		border: 1px solid grey;
+	}
+}  
+.bannerComprar{
+@include miBanner(comprar);	
+} 
+.bannerGusta{
+	@include miBanner(gusta);
+} 

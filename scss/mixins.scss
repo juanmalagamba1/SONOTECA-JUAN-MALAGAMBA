@@ -1,0 +1,22 @@
+@mixin boton () {
+padding:  8px 10px;
+border-radius: 5px;
+border: 1px solid transparent;
+background-color: $colorPrimario;
+color: $colorNegro;
+box-shadow: 0px 0px 15px, -6px rgba(0,0,0,0.75);
+transition: all 0.2s ease-in-out;
+} 
+@mixin miBanner ($imagen){
+	@if $imagen == comprar { 
+		min-height: 450px;
+		background-image: url('../multimedia/comprar.png');
+		background-position: center;
+		background-size: cover;
+	} @else if $imagen == gusta{
+		min-height: 450px;
+		background-image: url('../multimedia/megusta.png');
+		background-position: center;
+		background-size: cover;
+	}
+}

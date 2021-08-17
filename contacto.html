@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contacto</title>
+	<meta charset="utf-8">
+	<meta name="description" content="composición musical">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+</head>
+<body>
+	<div id="header">
+		<div class="botonera">
+			<a href="index.html" class="logo"><img src="multimedia/logo.png" alt="La sonoteca"></a>
+			<ul>
+				<li><a class="linkNav" href="index.html">Inicio</a></li>
+				<li><a class="linkNav" href="sonoteca.html">Sonoteca</a></li>
+				<li><a class="linkNav" href="compras.html">Compras</a></li>
+				<li><a class="linkNav linkNavActivo" href="contacto.html">Contacto</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="espaciadoContacto"></div>	
+	
+	<div id="contacto">
+		<h1>Registrate:</h1>
+		<div class="espaciadoHCon"></div>
+		<form action="registro.html" method="GET" enctype="multipart/form-data">
+			<label for="nombre">Ingrese su nombre: </label>
+			<input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" autocomplete="off" required>
+			<br>
+			<label for="apellido">Ingrese su apellido: </label>
+			<input id="apellido" type="text" name="apellido" placeholder="Ingrese su apellido" autocomplete="off" required>
+			<br>
+			<label for="email">Ingrese su email: </label>
+			<input id="email" type="text" name="email" placeholder="Ingrese su email" autocomplete="off" required>
+			<br>
+			<input type="password" name="pass" placeholder="Ingresa tu pass">
+			<br>
+			<select name="genero" class="genero">
+				<option value="1">Femenino</option>
+				<option value="2">Masculino</option>
+				<option value="3">Otro</option>
+				<option value="4">Prefiero no decirlo</option>
+			</select>
+			<br>
+			<label>Ingresa tu mensaje: </label>
+			<br>
+			<textarea></textarea>
+			<br>
+			<label>Selecciona el tipo de plan que quieres:</label>
+			<div class="clean"></div>
+			<div class="graMeAnual">
+				<label>Gratuito:</label>
+				<input type="radio" name="plan" value="gratuito" class="botonsito">
+				<label>Pago mensual:</label>
+				<input type="radio" name="plan" value="pago mensual" class="botonsito">
+				<label>Pago anual</label>
+				<input type="radio" name="plan" value="pago anual" class="botonsito">
+				<br>
+				<input type="submit" name="enviar" value="ENVIAR" class="enviar">
+				<input type="reset" name="borrar" value="BORRAR" class="borrar">
+			</div>
+		</form>
+	</div>
+</body>
+</html>
